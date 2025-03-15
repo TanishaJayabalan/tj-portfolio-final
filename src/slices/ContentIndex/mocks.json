@@ -1,0 +1,57 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "FieldContent",
+				"value": "plates",
+				"type": "Text"
+			},
+			"content_typer": {
+				"__TYPE__": "FieldContent",
+				"value": "Blog",
+				"type": "Select"
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Laborum magna laborum Lorem aute cupidatat. Proident ex voluptate officia minim aliqua eu qui proident aliqua non irure culpa consequat ut pariatur. Duis culpa do qui eu qui ad Lorem sunt sint laboris dolore aute."
+						}
+					}
+				]
+			},
+			"view_more_text": {
+				"__TYPE__": "FieldContent",
+				"value": "girl",
+				"type": "Text"
+			},
+			"fallback_item_image": {
+				"__TYPE__": "ImageContent",
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118",
+					"width": 4160,
+					"height": 3120
+				},
+				"url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118",
+				"width": 4160,
+				"height": 3120,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"alt": "oldest",
+				"thumbnails": {}
+			}
+		},
+		"items": []
+	}
+]

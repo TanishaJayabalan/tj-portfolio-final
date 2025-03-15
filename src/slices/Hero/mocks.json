@@ -1,0 +1,42 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"first_name": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Pariatur ullamco anim nisi est cupidatat ipsum quis ipsum esse consequat cillum in."
+						}
+					}
+				]
+			},
+			"last_name": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Magna exercitation veniam do."
+						}
+					}
+				]
+			},
+			"tag_line": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Adipisicing esse officia duis non irure dolore cupidatat dolor id non. Anim est aute ad consequat laborum sit nulla velit ad dolor. Eu consectetur aliqua cillum."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

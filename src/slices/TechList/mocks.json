@@ -1,0 +1,40 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "FieldContent",
+				"value": "wool",
+				"type": "Text"
+			},
+			"tech_name": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"tech_name",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "forgotten",
+									"type": "Text"
+								}
+							],
+							[
+								"tech_colour",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "#050f5d",
+									"type": "Color"
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
