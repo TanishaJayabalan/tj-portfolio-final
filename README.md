@@ -1,4 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Website
+
+A personal portfolio website built with Next.js, Tailwind CSS, and Prismic CMS.
+
+## Features
+
+- Modern UI with 3D geometric shapes and gradient backgrounds
+- Responsive design that works on all devices
+- Content management via Prismic CMS
+- Interactive components with smooth animations
+- Social media integration
+- Blog section for sharing articles and thoughts
+- Projects showcase with detailed information
+- Slice Simulator for Prismic slice development
+
+## Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Styling**: Tailwind CSS with custom classes
+- **CMS**: Prismic with custom types
+- **Typography**: Urbanist (Google Font)
+- **Icons**: React Icons
+- **Deployment**: Vercel
 
 ## Getting Started
 
@@ -16,21 +38,92 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
+```
+├── .next/                # Next.js build output
+├── customtypes/          # Prismic custom type definitions
+│   ├── blog_post/        # Blog post type
+│   ├── home_page/        # Home page type
+│   ├── page/             # Generic page type
+│   ├── project/          # Project type
+│   └── settings/         # Site settings type
+├── node_modules/         # Dependencies
+├── public/               # Static assets
+│   ├── sounds/           # Audio files
+│   ├── file.svg          # SVG assets
+│   ├── globe.svg
+│   ├── next.svg
+│   ├── noisetexture.jpg  # Texture overlay
+│   ├── vercel.svg
+│   └── window.svg
+├── src/                  # Source code
+│   ├── app/              # Next.js app router pages
+│   │   ├── [uid]/        # Dynamic page routes
+│   │   ├── api/          # API routes
+│   │   │   ├── exit-preview/
+│   │   │   ├── preview/ 
+│   │   │   └── revalidate/
+│   │   ├── blog/         # Blog section
+│   │   │   └── [uid]/    # Dynamic blog post routes
+│   │   ├── projects/     # Projects section
+│   │   │   └── [uid]/    # Dynamic project routes
+│   │   ├── slice-simulator/ # Prismic slice simulator
+│   │   ├── globals.css   # Global CSS styles
+│   │   ├── favicon.ico   # Site favicon
+│   │   ├── layout.tsx    # Root layout component
+│   │   └── page.tsx      # Homepage component
+│   ├── components/       # React components
+│   │   ├── Bounded.tsx   # Bounded container component
+│   │   ├── Button.tsx    # Button component
+│   │   ├── ContentBody.tsx # Content wrapper
+│   │   ├── Footer.tsx    # Site footer
+│   │   ├── Header.tsx    # Site header
+│   │   ├── Heading.tsx   # Heading component
+│   │   └── NavBar.tsx    # Navigation bar
+│   ├── slices/           # Prismic slice components
+│   │   ├── Biography/    # Biography slice
+│   │   ├── ContentIndex/ # Content index slice
+│   │   ├── Hero/         # Hero section slice
+│   │   ├── ImageBlock/   # Image block slice
+│   │   ├── TechList/     # Technology list slice
+│   │   ├── TextBlock/    # Text block slice
+│   │   └── index.tsx     # Slices entry point
+│   └── prismicio.ts      # Prismic configuration
+├── .gitignore            # Git ignore rules
+├── eslint.config.mjs     # ESLint configuration
+├── next-config.js        # Next.js configuration
+├── next-env.d.ts         # Next.js TypeScript declarations
+├── package-lock.json     # Dependency lock file
+├── package.json          # Project metadata and dependencies
+├── postcss.config.mjs    # PostCSS configuration
+└── slicemachine.config.js # Prismic Slice Machine configuration
+└── tsconfig.json         # TypeScript configuration
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
 
-## Learn More
+## Prismic CMS Setup
 
-To learn more about Next.js, take a look at the following resources:
+1. Create a Prismic account at [prismic.io](https://prismic.io)
+2. Create a new repository
+3. Import the custom types from the `customtypes` folder
+4. Connect your repository to this project using the Prismic client in `src/prismicio.ts`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Prismic Slice Development
 
-## Deploy on Vercel
+This project includes a slice simulator for developing and testing Prismic slices:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run slicemachine
+# or
+yarn slicemachine
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This will start the Slice Machine UI at [http://localhost:9999](http://localhost:9999).
+
+## Customization
+
+- Modify the background gradient in `globals.css`
+- Change the font by updating the import in `src/app/layout.tsx`
+- Add or remove slices in the `src/slices` directory
+- Customize the header and footer components
