@@ -4,7 +4,6 @@ import { FlatCompat } from "@eslint/eslintrc";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-
 const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
@@ -14,8 +13,8 @@ const eslintConfig = [
   {
     rules: {
       "@typescript-eslint/no-unused-vars": "warn",
-      "prefer-const": "off",
-      "@typescript-eslint/no-explicit-any": "warn" // Add this line to downgrade the any error
+      "prefer-const": "warn",
+      "@typescript-eslint/no-explicit-any": "warn"
     }
   }
 ];
