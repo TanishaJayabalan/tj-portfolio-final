@@ -40,4 +40,4 @@ export async function generateStaticParams() {
 }
 
 // Add revalidation
-export const revalidate = 60; // Revalidate every 60 seconds
+export const revalidate = 86400; // Revalidate once per day (86400 seconds)
